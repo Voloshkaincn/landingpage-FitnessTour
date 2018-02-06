@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="libs/jquery.fullPage.min.css" />
         <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid.min.css" />
+        <link rel="stylesheet" type="text/css" href="libs/slick.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -171,7 +172,7 @@
             </div>
 
             <div id="trainers" class="section trainers">
-                <h1 class="align-center">О тренерах</h1>
+                <h1>О тренерах</h1>
                 <div class="trainers__block">
                      <div class="container">
                         <div class="row">
@@ -216,12 +217,13 @@
                     </div>         
                 </div>
             </div>
+
             <div id="program" class="section program">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-10">
                             <div class="row">
-                                <h1 class="align-center">Итак программа Фитнес тура в Греции</h1>
+                                <h1>Итак программа Фитнес тура в Греции</h1>
                                 <div class="program__text primary-text align-center">
                                     Даты тура: 28.04.2018 – 09.05.2018 (11 ночей)
                                 </div>
@@ -232,38 +234,142 @@
                                     <li>Тренировка с координационной лестницей и резинками (акцент ягодицы) на спортивной лужайке которая находится на побережье Крита. Тема вечера: Что мы заедаем? Способы наполнить себя не едой. </li>
                                 </ol>
                                 <div class="rimary-btn">Показать полную программу</div>
+                                <div class="bg-text-fade"></div>
                             </div>
                         </div>          
                     </div>
                 </div>
             </div>
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
 
+            <div class="section">
+                <h1>Вы научитесь</h1>
+                <div class="plan">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-5">
+                                <div class="secendary-title light-text">Коучинг стройности</div>
+                                <p class="light-text">Соединяться со своими истинными потребностями, есть только когда по настоящими голодны , не заедать стресс и проблемы, а решать их, принять решение быть стройной и оставаться такой долгие годы .</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="secendary-title">Тренинг развития эмоционального интеллекта:</div>
+                                <p>Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. Вы научитесь больше любить и принимать себя. Сделаете свою жизнь более яркой и насыщенной.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1>Как это было</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="post-slider">
+                            <div class="post-slide video-block"><a href="#"><img src="img/slide1.jpg" alt=""></a></div>
+                            <div class="post-slide"><a href="#"><img src="img/slide2.jpg" alt=""></a></div>
+                            <div class="post-slide video-block"><a href="#"><img src="img/slide3.jpg" alt=""></a></div>
+                            <div class="post-slide"><a href="#"><img src="img/slide4.jpg" alt=""></a></div>
+                            <div class="post-slide"><a href="#"><img src="img/slide3.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="views" class="section views">
+                <div class="container">
+                    <div class="row">
+                        <h1>Отзывы участников</h1>
+                        <div class="views__slider">
+                            <div class="views__slide">
+                                <div class="views__photo">
+                                    <img src="img/views-photo.jpg" alt="photo">
+                                    <div class="views__name">Александра</div>
+                                    <div class="views__text">
+                                        Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. Вы научитесь больше любить и принимать себя. Сделаете свою жизнь более яркой и насыщенной.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="views__slide">
+                                <div class="views__photo">
+                                    <img src="img/views-photo.jpg" alt="photo">
+                                    <div class="views__name">Елена</div>
+                                    <div class="views__text">
+                                        Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="views__slide">
+                                <div class="views__photo">
+                                    <img src="img/views-photo.jpg" alt="photo">
+                                    <div class="views__name">Игорь</div>
+                                    <div class="views__text">
+                                        Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. Вы научитесь больше любить и принимать себя. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="views__slide">
+                                <div class="views__photo">
+                                    <img src="img/views-photo.jpg" alt="photo">
+                                    <div class="views__name">Елена</div>
+                                    <div class="views__text">
+                                        Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="end section">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-7">
+                           <h1 class="light-text">Успейте зарегистрироваться сейчас</h1>
+                           <div class="primary-text">чтоб в апреле наслаждаться солнцем и привести свое тело в порядок!</div>
+                           <div class="promo-sticker">
+                                <h3>795 евро</h3>
+                                <p>при бронировании до 15 февраля!</p>
+                            </div>
+                       </div>
+                       <div class="col-5">
+                           <div class="form-block">
+                                <p>
+                                    <span class="form-block__title">Забронируй место сейчас,</span>
+                                    <span> пока это не сделал кто-то другой и получи </span>
+                                    <span class="text-bold bright-text">скидку 10 Евро!</span>
+                                </p>
+                                <input class="input-style" type="text" placeholder="Ваше имя"></inmput>
+                                <input class="input-style" type="text" placeholder="Ваш номер телефона">
+                                <button class="bright-btn">Забронировать сейчас</button>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+                            <div class="col-4">
+                                <p>Подпишитесь на новости:</p>
+                                <ul class="social-menu">
+                                    <li><span class="icon-instagram"></span></li>
+                                    <li><span class="icon-facebook-f"></span></li>
+                                    <li><span class="icon-send"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+            
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="libs/jquery.fullpage.min.js" ></script>
+        <script src="libs/slick.min.js" ></script>
         <script src="js/main.js" ></script>
     </body>
 </html>

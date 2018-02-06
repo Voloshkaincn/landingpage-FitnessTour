@@ -70,6 +70,7 @@ body {
 		font-size: 3rem;
 		margin: 0;
 		line-height: 1.2em;
+		text-align: center;
 	}
 	h2 {
 		width: 100%;
@@ -109,6 +110,10 @@ body {
 	}
 	.primary-text {
 		font-size: 1.556em;
+	}
+	.secendary-title {
+		font-family: 'Merriweather', serif;
+		font-size: 1.555em;
 	}
 //====
 
@@ -301,7 +306,6 @@ body {
 	.video {
 		&-block {
 			display: block;
-			margin-top: 4.833em;
 			position: relative;
 			&:before {
 				@extend .iconmoon;
@@ -343,6 +347,9 @@ body {
 				display: block;
 			}
 		}
+	}
+	.titleSection .video-block {
+		margin-top: 4.833em;
 	}
 	.info-secondary-text {
 		color: #787878;
@@ -451,7 +458,14 @@ body {
 				position: absolute;
 				left: 0;
 			}
+			&:nth-child(3){
+				opacity: 0.85;
+			}
+			&:nth-child(4){
+				opacity: 0.65;
+			}
 		}
+		
 	}
 	.program {
 		background-image: url(../img/bg-program.png);
@@ -460,4 +474,39 @@ body {
     		margin-top: 1em;
     		margin-bottom: 3em;
 		}
+	}
+	.plan {
+		margin-top: 3em;
+		background-image: url(../img/bg-plan.png);
+		padding: 7em 0;
+	    background-position: center;
+	    background-size: cover;
+	}
+	.post {
+		&-slider {
+			width: 100%;
+		}
+		&-slide {
+			height: 19rem;
+			margin: 0.5rem;
+			overflow: hidden;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+			img {
+				width: 100%;
+    			height: auto;
+			}
+		}
+	}
+	.views {
+		background-image: url(../img/bg-views.png);
+		&__slider {
+			width: 100%;
+		}
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
