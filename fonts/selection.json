@@ -4,6 +4,35 @@
     {
       "icon": {
         "paths": [
+          "M399.36 512c0 62.208 50.483 112.64 112.691 112.64s112.589-50.483 112.589-112.64c0-62.208-50.381-112.589-112.589-112.589s-112.691 50.381-112.691 112.589z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "dot-single"
+        ],
+        "grid": 20
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "name": "dot-single",
+        "prevSize": 20,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M790.857 529.714l-758.857 421.714c-17.714 9.714-32 1.143-32-18.857v-841.143c0-20 14.286-28.571 32-18.857l758.857 421.714c17.714 9.714 17.714 25.714 0 35.429z"
         ],
         "width": 808.5942857142857,
@@ -24,7 +53,7 @@
         "prevSize": 28,
         "code": 61515
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 3,
       "iconIdx": 75
     },
@@ -52,9 +81,36 @@
         "prevSize": 28,
         "code": 61594
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 3,
       "iconIdx": 146
+    },
+    {
+      "icon": {
+        "paths": [
+          "M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+        ],
+        "width": 877.7142857142857,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "circle"
+        ],
+        "defaultCode": 61713,
+        "grid": 14
+      },
+      "attrs": [],
+      "properties": {
+        "name": "circle",
+        "id": 245,
+        "order": 10,
+        "prevSize": 28,
+        "code": 61713
+      },
+      "setIdx": 1,
+      "setId": 3,
+      "iconIdx": 245
     },
     {
       "icon": {
@@ -79,7 +135,7 @@
         "prevSize": 28,
         "code": 61805
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 3,
       "iconIdx": 329
     },
@@ -107,7 +163,7 @@
         "prevSize": 28,
         "code": 61912
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 3,
       "iconIdx": 429
     },
@@ -136,7 +192,7 @@
         "prevSize": 32,
         "code": 59714
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 1,
       "iconIdx": 66
     }

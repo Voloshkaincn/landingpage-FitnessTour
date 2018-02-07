@@ -241,6 +241,7 @@ body {
 	    	margin: 0.3em 0;
 		    font-size: 0.889em;
 		    line-height: 1.2em;
+		        width: 9em;
 	    }
 	    &:before {
 	    	background-image: url(../img/bg-promo-sticker.png);
@@ -485,10 +486,13 @@ body {
 	.post {
 		&-slider {
 			width: 100%;
+			.slick-list {
+				overflow: unset;
+			}
 		}
 		&-slide {
 			height: 19rem;
-			margin: 0.5rem;
+			margin: 0 1rem;
 			overflow: hidden;
 			display: flex;
 		    justify-content: center;
@@ -504,9 +508,143 @@ body {
 		&__slider {
 			width: 100%;
 		}
+		&__slide {
+			margin: 0 1em;
+		}
+		&__photo {
+			width: 3.889rem;
+			height: 3.889rem;
+			border: 0.222em solid transparent;
+			border-radius: 50%;
+			box-shadow: 0 0 0 0.222em #c3d9e5;
+			margin: 0.722em auto;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    overflow: hidden;
+		    img {
+		    	width: auto;
+    			height: 100%;
+		    }
+		}
+		&__name {
+			text-align: center;
+			font-family: 'Merriweather', serif;
+			font-weight: bold;
+			font-style: italic;
+			margin-bottom: 1.667em;
+		}
+		&__text {
+			padding: 1.555em;
+			background-color: #fff;
+			border-radius: 0.722em;
+			position: relative;
+			&:before {
+				content: "";
+				border-bottom: 0.833em solid #fff;
+			    border-right: 0.833em solid transparent;
+			    position: absolute;
+			    top: -0.833em;
+			    left: 50%;
+			    margin-left: -0.415em;
+			}
+		}
 	}
 	footer {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+	}
+	.slider {
+		&__header {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			h1 {
+				width: auto;
+				margin: 0 2.778rem;
+			}
+		}
+		&__arrow {
+			background-image: url(../img/slider-arrow.png);
+			background-image: url(../img/slider-arrow.png);
+		    width: 8em;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 80%;
+		    transition: all 0.3s;
+		    &:hover,
+		    &:focus {
+		    	outline: none;
+			    background-size: 100%;
+			    transition: all 0.3s;
+		    }
+		}
+		&__prev {
+			transform: rotate(180deg);
+		}
+	}
+	.slick {
+		&-slider {
+			margin-top: 2.2em;
+		}
+		&-dots {
+			font-size: 3rem;
+		    display: flex;
+		    justify-content: center;
+		    li {
+		    	margin-right: 1.5rem;
+		    	color: #c3d9e5;
+		    	&.slick-active {
+		    		color: #0091e5;
+		    	} 
+		    	button {
+			        display: none;
+			    }
+		    }
+		    
+		   
+		}
+	}
+	.end {
+		background-image: url(../img/bg-end.jpg);
+		h1 {
+			text-align: left;
+		}
+		&__text {
+			width: 26em;
+			margin-top: 0.75em;
+		}
+		.promo-sticker {
+			margin: 0 40%;
+			&:after {
+				content: "";
+			    width: 12.5em;
+    			height: 2.4em;
+			    position: absolute;
+			    background-image: url(../img/arrow-pomo-sticker.png);
+			    background-repeat: no-repeat;
+			    bottom: 10%;
+			    left: 85%;
+
+			}
+		}
+	}
+	footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	.social-menu {
+		display: flex;
+		list-style: none;
+		color: #de291b;
+		padding-left: 0.5rem;
+		li {
+			margin: 0.5rem;
+			font-size: 1.6rem;
+			&:hover,
+			&:focus {
+				transform: scale(1.2,1.2);
+			}
+		}
 	}
