@@ -10,6 +10,9 @@ body {
 	line-height: 1.444em;
 	color: #121212;
 	background-color: #fff;
+	@media (max-height: 899px) {
+		font-size: 16px;
+	}
 }
 ::-webkit-input-placeholder {color:#d0d0d0;}
 ::-moz-placeholder          {color:#d0d0d0;}/* Firefox 19+ */
@@ -127,9 +130,45 @@ body {
 		.container {
 			margin-top: 0;
 		}
+		// &.fixed {
+		// 	height: 0;
+		// 	padding: 0;
+		// 	overflow: hidden;
+			// .logo {
+			// 	opacity: 0;
+			// 	width: 0;
+			// 	max-height: 0;
+			// 	transition: opacity 0.5s, width 0.5s 0.3s, max-height 0.5s 0.3s;
+			// }
+			// .top-contact {
+			// 	opacity: 0;
+			// 	width: 0;
+			// 	height: 0;
+			// 	transition: opacity 0.5s, width 0.5s 0.5s, height 0.5s 0.5s;
+			// }
+			// .row {
+			// 	//display: block;
+			// }
+			// .menu {
+			// 	margin: 0;
+			// 	margin-top: -0.8em;
+			// 	transition: all 0.5s;
+			// 	&__item {
+			// 		background: rgba(255, 255, 255, 0.6);
+			// 	    box-shadow: 0 0 8px 7px rgba(255, 255, 255, 0.5);
+   //  				border: 1px solid rgba(255, 255, 255, 0.02);
+   //  				border-radius: 0.2em;
+			// 	}
+			// }
+		// }
 	}
 	.logo {
 		width: 22.778em;
+		//transition: opacity 0.5s;
+		max-height: 100%;
+		@media (max-height: 999px) {
+			width: 15em;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -146,8 +185,10 @@ body {
 			text-transform: uppercase;
 			margin: 0 0.5em;
 			position: relative;
+			border: 1px solid transparent;
 			&:hover,
-			&:focus {
+			&:focus,
+			&.active {
 				&:before {
 					content: "";
 					width: 108%;
@@ -162,10 +203,16 @@ body {
 		}
 	}
 	.top-contact {
+		//transition: opacity 0.5s;
+		width: 100%;
+		height: 100%;
 		font-size: 2em;
 	    color: #f92b1b;
 	    font-weight: bold;
 	    text-align: right;
+	    @media (max-height: 999px) {
+			font-size: 1.8em;
+		}
 	}
 //=====
 
@@ -179,14 +226,15 @@ body {
 	    background-position: center;
     	background-repeat: no-repeat;
 	}
-	.titleSection {
+	.title-section {
 		.bg-section {
 			background-image: url(../img/bg-title-section.jpg);
+			height: 100%;
 			top: 0;
 		}		
 	} 
-	.titleSection .container {
-	    margin-top: 5%;
+	.title-section .container {
+	    margin-top: 8em;
 	}
 	.section {
 		background-size: cover;
@@ -201,6 +249,10 @@ body {
 			color: #f92b1b;
 			text-shadow: -3px -3px 3px #fff, 3px -3px 3px #fff, -3px 3px 3px #fff, 3px 3px 3px #fff;
 			z-index: 9;
+			text-align: left;
+			@media (max-height: 999px) {
+				font-size: 5.5em;
+			}
 		}
 		&-description {
 			font-weight: bold;
@@ -226,6 +278,7 @@ body {
 			    z-index: -2;
 			    bottom: -10%;
 			    left: 80%;
+			    background-size: contain;
 			}
 		}
 	}
@@ -308,6 +361,7 @@ body {
 		&-block {
 			display: block;
 			position: relative;
+			width: 80%;
 			&:before {
 				@extend .iconmoon;
 				content: '\f04b';
@@ -326,6 +380,10 @@ body {
 			    padding-left: 0.4rem;
 			    text-align: center;
 			    line-height: 7.222rem;
+			}
+			img {
+				width: 100%;
+    			height: auto;
 			}
 		}
 		&-description {
@@ -349,8 +407,14 @@ body {
 			}
 		}
 	}
-	.titleSection .video-block {
+	.title-section .video-block {
 		margin-top: 4.833em;
+		@media (max-height: 999px) {
+			margin-top: 3em;
+		}
+	}
+	#infoSecondary {
+		min-height: 45em;
 	}
 	.info-secondary-text {
 		color: #787878;
@@ -399,10 +463,13 @@ body {
 			background-size: cover;
 			background-position-x: center;
 			padding-bottom: 10%;
+			@media (max-height: 999px) {
+				padding-bottom: 6%;
+			}
 		}
 		&__photo {
-			width: 12.778rem;
-			height: 12.778rem;
+			width: 12rem;
+			height: 12rem;
 			border: 0.05rem solid #fff;
 			border-radius: 50%;
 			background-size: cover;
@@ -410,6 +477,10 @@ body {
 			margin-left: calc(15% + 1rem);
 			margin-top: -2%;
 			margin-bottom: 3%;
+			@media (max-height: 999px) {
+				width: 10rem;
+				height: 10rem;
+			}
 			&-right {
 				margin-right: 15%;
 				margin-right: calc(15% + 1rem);
@@ -423,12 +494,16 @@ body {
 			font-size: 0.889em;
 		}
 		&__info {
-			margin-left: 15%;
+			margin: 0 15%;
 		}
 		&__after-text {
 			 margin-top: -2em;
 		    .primary-text {
 				margin: 0;
+				@media (max-height: 999px) {
+					font-size: 1.4em;
+    				line-height: 1.2em;
+				}
 		    }
 		}
 		h2 {
@@ -476,12 +551,17 @@ body {
     		margin-bottom: 3em;
 		}
 	}
+	#plan {
+		min-height: 43rem;
+	}
 	.plan {
 		margin-top: 3em;
 		background-image: url(../img/bg-plan.png);
 		padding: 7em 0;
 	    background-position: center;
-	    background-size: cover;
+	}
+	#report {
+		min-height: 45rem;
 	}
 	.post {
 		&-slider {
@@ -626,7 +706,7 @@ body {
 			    background-repeat: no-repeat;
 			    bottom: 10%;
 			    left: 85%;
-
+				background-size: contain;
 			}
 		}
 	}

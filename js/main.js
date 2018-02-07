@@ -1,7 +1,19 @@
 jQuery(document).ready(function($) {
 
 	$("#fullpage").fullpage({
+		anchors: ['titleSection', 'infoSecondarySection', 'aboutTourSection', 'priceSection', 'trainersSection', 'programSection', 'planSection', 'reportSection', 'viewsSection', 'endSection'],
+		//menu: '#menu',
+		onLeave: function(index, nextIndex, direction){
+			var leavingSection = $(this);
+			if(index == 1 && direction =='down'){
+				$('.header').addClass('fixed');
+			}
+			if(index == 2 && direction =='up'){
+				$('.header').removeClass('fixed');
+			}
+		},
 	});
+
 
   	$('.post-slider').slick({
 	    slidesToShow: 2,
