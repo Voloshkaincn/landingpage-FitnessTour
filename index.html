@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="libs/jquery.fullPage.min.css" />
         <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid.min.css" />
         <link rel="stylesheet" type="text/css" href="libs/slick.min.css"/>
+        <link rel="stylesheet" href="libs/jquery.fancybox.min.css" type="text/css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
@@ -34,7 +35,7 @@
                         <div class="logo">
                             <img src="img/logo.png" alt="logo">
                         </div>
-                        <div class="col">
+                        <div class="col no-padding">
                             <ul id="menu" class="menu">
                                 <li data-menuanchor="aboutTourSection" class="menu__item">
                                     <a href="#aboutTourSection">О туре</a>
@@ -64,8 +65,8 @@
             <div id="title" class="section title-section" >  
                 <div class="bg-section"></div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-7">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 col-sm-6 col-10">
                             <div class="row">
                                 <h2 class="light-text align-center">28 арпеля 2018 года</h2>
                                 <h1 class="main-title">Фитнес тур</h1>
@@ -79,13 +80,13 @@
                                 </a>
                             </div>                            
                         </div>
-                        <div class="col-5">
+                        <div class="col-md-5 col-sm-6 col-8">
                             <div class="row">
                                 <div class="form-block">
                                     <p>
                                         <span class="form-block__title">Забронируй место сейчас,</span>
                                         <span> пока это не сделал кто-то другой и получи </span>
-                                        <span class="text-bold bright-text">скидку 10 Евро!</span>
+                                        <span class="text-bold bright-text text-nowrap">скидку 10 Евро!</span>
                                     </p>
                                     <input class="input-style" type="text" placeholder="Ваше имя"></inmput>
                                     <input class="input-style" type="text" placeholder="Ваш номер телефона">
@@ -104,15 +105,17 @@
             <div id="infoSecondary" class="section fp-auto-height" >
                 <div class="container">
                     <div class="row  align-items-center justify-content-between">
-                        <div class="col-5">
+                        <div class="col-xl-5 col-6">
                             <div class="row">
-                                <p class="info-secondary-text">Никак не можете похудеть к лету </br> и постоянно заедаете стресс?</p>
+                                <p class="info-secondary__text">Никак не можете похудеть к лету </br> и постоянно заедаете стресс?</p>
                                 <h2>Хотите поразить всех своей фигурой и получить новые знания в области питания?</h2>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="row">
-                                <img src="img/burger-in-trashcan.jpg" alt="put your burger in the trashcan">
+                                <div class="info-secondary__img">
+                                    <img src="img/burger-in-trashcan.jpg" alt="put your burger in the trashcan">
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -123,7 +126,7 @@
                 <div class="bg-section"></div>
                 <div class="container">
                     <div class="row justify-content-end">
-                        <div class="col-5">
+                        <div class="col-md-5 col-sm-6 col-8 ">
                             <h2>Отдых, который изменит отношение к себе и своему телу</h2>
                             <p>Персональный тренер Вадим Кравченко совместно с Наталией Черныш организовывают 11 дневный фитнес тур в Солнечную Грецию, где вы сможете не только насладиться теплым морем, но и подтянуть тело, получить знания в области диетологии, а также посетить лекции личного роста.</p>
                         </div>
@@ -134,8 +137,8 @@
             <div id="price" class="section price" >
                 <div class="bg-section"></div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col-7">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 col-sm-6 col-8">
                             <div class="row">
                                 <h2>Фитнес тур </br> «Путешествуй за мечтой» </br> стартует 28 апреля</h2>
                                 <div class="col-12">
@@ -162,7 +165,7 @@
                                 
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col-md-5 col-sm-6 col-8">
                             <div class="row">
                                 <div class="form-block">
                                     <p>
@@ -257,11 +260,11 @@
                 <div class="plan">
                     <div class="container">
                         <div class="row justify-content-between">
-                            <div class="col-5">
+                            <div class="col-sm-5 col-6">
                                 <div class="secendary-title light-text">Коучинг стройности</div>
                                 <p class="light-text">Соединяться со своими истинными потребностями, есть только когда по настоящими голодны , не заедать стресс и проблемы, а решать их, принять решение быть стройной и оставаться такой долгие годы .</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-md-5 col-6">
                                 <div class="secendary-title">Тренинг развития эмоционального интеллекта:</div>
                                 <p>Определять свои чувства, управлять своим состоянием присоединятся к эмоциям других людей для создания близких отношений. Вы научитесь больше любить и принимать себя. Сделаете свою жизнь более яркой и насыщенной.</p>
                             </div>
@@ -279,11 +282,21 @@
                             <button class="slider__arrow slider__next"></button>
                         </div>
                         <div class="post-slider">
-                            <div class="post-slide video-block"><a href="#"><img src="img/slide1.jpg" alt=""></a></div>
-                            <div class="post-slide"><a href="#"><img src="img/slide2.jpg" alt=""></a></div>
-                            <div class="post-slide video-block"><a href="#"><img src="img/slide3.jpg" alt=""></a></div>
-                            <div class="post-slide"><a href="#"><img src="img/slide4.jpg" alt=""></a></div>
-                            <div class="post-slide"><a href="#"><img src="img/slide3.jpg" alt=""></a></div>
+                            <div class="post-slide">
+                                <a class="video-block" data-fancybox="gallery" href="img/slide1.jpg" style="background-image: url(img/slide1.jpg);"></a>
+                            </div>
+                            <div class="post-slide">
+                                <a  data-fancybox="gallery" href="img/slide2.jpg" style="background-image: url(img/slide2.jpg);"></a>
+                            </div>
+                            <div class="post-slide">
+                                <a class="video-block"  data-fancybox="gallery" href="img/slide3.jpg" style="background-image: url(img/slide3.jpg);"></a>
+                            </div>
+                            <div class="post-slide">
+                                <a  data-fancybox="gallery" href="img/slide4.jpg" style="background-image: url(img/slide4.jpg);"></a>
+                            </div>
+                            <div class="post-slide">
+                                <a  data-fancybox="gallery" href="img/slide3.jpg" style="background-image: url(img/slide3.jpg);"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -341,8 +354,8 @@
 
             <div id="end" class="end section">
                 <div class="container">
-                    <div class="row">
-                       <div class="col-7">
+                    <div class="row justify-content-center">
+                       <div class="col-md-7 col-sm-6 col-8">
                             <div class="row">
                                <h1 class="light-text">Успейте зарегистрироваться сейчас</h1>
                                <div class="end__text primary-text">чтоб в апреле наслаждаться солнцем и привести свое тело в порядок!</div>
@@ -352,13 +365,13 @@
                                 </div>
                             </div>
                        </div>
-                       <div class="col-5">
+                       <div class="col-md-5 col-sm-6 col-8">
                            <div class="row">
                                <div class="form-block">
                                     <p>
                                         <span class="form-block__title">Забронируй место сейчас,</span>
                                         <span> пока это не сделал кто-то другой и получи </span>
-                                        <span class="text-bold bright-text">скидку 10 Евро!</span>
+                                        <span class="text-bold bright-text text-nowrap">скидку 10 Евро!</span>
                                     </p>
                                     <input class="input-style" type="text" placeholder="Ваше имя"></inmput>
                                     <input class="input-style" type="text" placeholder="Ваш номер телефона">
@@ -371,10 +384,10 @@
                 <footer>
                     <div class="container">
                         <div class="row justify-content-between">
-                            <div class="logo col-2">
+                            <div class="logo col-lg-2 col-md-3 col-4">
                                 <img src="img/logo.png" alt="logo">
                             </div>
-                            <div class="col-5 d-flex align-items-center">
+                            <div class="col d-flex align-items-center justify-content-end">
                                 <p>Подпишитесь на новости:</p>
                                 <ul class="social-menu">
                                     <li><a href="#"><span class="icon-instagram"></span></a></li>
@@ -391,8 +404,10 @@
             
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="libs/scrolloverflow.min.js"></script>
         <script src="libs/jquery.fullpage.min.js" ></script>
         <script src="libs/slick.min.js" ></script>
+        <script type="text/javascript" src="libs/jquery.fancybox.min.js"></script>
         <script src="js/main.js" ></script>
     </body>
 </html>
