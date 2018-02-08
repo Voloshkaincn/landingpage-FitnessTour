@@ -1,3 +1,6 @@
+<?php
+    
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="uk">
 
@@ -71,7 +74,7 @@
                                 <h2 class="light-text align-center">28 арпеля 2018 года</h2>
                                 <h1 class="main-title">Фитнес тур</h1>
                                 <p class="main-description">в солнечную Грецию 3 в 1</p>
-                                <a href="#" class="video-block">
+                                <a data-fancybox="video" href="img/video.jpg" class="video-block">
                                     <p class="video-description">
                                         <span>Место проведения — отель элит класса</span>
                                         <span class='light-text'>Aldemar Knossos Royal Beach Resort 5*</span>
@@ -282,21 +285,19 @@
                             <button class="slider__arrow slider__next"></button>
                         </div>
                         <div class="post-slider">
+                            <?php
+                                $dir    = 'img/slider';
+                                $slides = array_diff(scandir($dir), array('..', '.'));
+                                foreach ($slides as $slide):
+                            ?>
                             <div class="post-slide">
-                                <a class="video-block" data-fancybox="gallery" href="img/slide1.jpg" style="background-image: url(img/slide1.jpg);"></a>
+                                <a class="" data-fancybox="gallery" href="img/slider/<?= $slide ?>" style="background-image: url(img/slider/<?= $slide ?>);"></a>
                             </div>
-                            <div class="post-slide">
-                                <a  data-fancybox="gallery" href="img/slide2.jpg" style="background-image: url(img/slide2.jpg);"></a>
-                            </div>
-                            <div class="post-slide">
-                                <a class="video-block"  data-fancybox="gallery" href="img/slide3.jpg" style="background-image: url(img/slide3.jpg);"></a>
-                            </div>
-                            <div class="post-slide">
-                                <a  data-fancybox="gallery" href="img/slide4.jpg" style="background-image: url(img/slide4.jpg);"></a>
-                            </div>
-                            <div class="post-slide">
-                                <a  data-fancybox="gallery" href="img/slide3.jpg" style="background-image: url(img/slide3.jpg);"></a>
-                            </div>
+
+                            <?php
+                                endforeach;
+                            ?>
+                            
                         </div>
                     </div>
                 </div>
