@@ -81,6 +81,39 @@ jQuery(document).ready(function($) {
 		$('.list-days').removeClass('list-fadeout');
 		$(this).hide('300')
 	});
+    //Sending message
+
+    $(".bright-btn").click(
+        function(){
+            var number = $(this).data("form");
+            sendAjaxForm('send-form-'+number, 'send.php');
+            return false;
+        }
+    );
+
+    // Получение ответа и вывод сообщения в модальное окно
+    function sendAjaxForm(ajax_form, url) {
+        $.ajax({
+            url:     url, //url страницы (action_ajax_form.php)
+            type:     "POST", //метод отправки
+            dataType: "html", //формат данных
+            data: $("."+ajax_form).serialize(),  // Сеарилизуем объект
+            success: function(response) { //Данные отправлены успешно
+                var result = $.parseJSON(response);
+                $('.bright-btn').blur();
+                $("."+ajax_form)[0].reset();
+                alert(result.message);
+
+            },
+            error: function(response) {
+                // Данные не отправлены
+                var result = $.parseJSON(response.responseText);
+                $('.bright-btn').blur();
+                $("."+ajax_form)[0].reset();
+                alert(result.message);
+            }
+        });
+    }
 
 
 });
