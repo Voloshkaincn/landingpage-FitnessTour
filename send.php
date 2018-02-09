@@ -15,7 +15,7 @@ if((isset($name)&&$_POST['name']!='')&&(isset($phone)&&$_POST['phone']!='')){
                     </body>
                 </html>';
     $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-    $headers .= "From: Отправитель <okmi-exclusive@gmail.com>\r\n";
+    $headers .= "From: Отправитель <info@okmi-exclusive.com.ua>\r\n";
     $response = [];
     if(mail($to, $subject, $message, $headers)){
         $response = ['success'=> true,'message'=>'Спасибо за заявку! Мы свяжемся с Вами в ближайшее время !'];
