@@ -1,19 +1,32 @@
 jQuery(document).ready(function($) {
 
 	$("#fullpage").fullpage({
-		anchors: ['titleSection', 'infoSecondarySection', 'aboutTourSection', 'priceSection', 'trainersSection', 'programSection', 'planSection', 'reportSection', 'viewsSection', 'endSection'],
+		anchors: ['okmiTour', 'beSlim', 'aboutTourSection', 'priceSection', 'trainersSection', 'afterTrainersSection', 'programSection', 'planSection', 'photoSection', 'viewsSection', 'endSection'],
 		//scrollBar: true,
 		responsiveHeight: 767,
 		responsiveWidth: 576,
 		onLeave: function(index, nextIndex, direction){
 			var leavingSection = $(this);
 			if(index == 1 && direction =='down'){
-				$('.header').addClass('fixed');
-			}
-			if(index == 2 && direction =='up'){
-				$('.header').removeClass('fixed');
+				$('.scroll-up').addClass('show');
+			} else if(index == 7) {
+				$('.program__list').scrollTop(0);
+			} else if(index == 11) {
+				$('.scroll-up').removeClass('position-up');
 			}
 		},
+		afterLoad: function(anchorLink, index){
+			var loadedSection = $(this);
+			if(index == 1){
+				$('.scroll-up').removeClass('show');
+			} else if(anchorLink == 'endSection') {
+				$('.scroll-up').addClass('position-up');
+			}
+		},
+		//scrollOverflow: true,
+		scrollOverflowReset: true,
+		normalScrollElements: '.program__list'
+
 	});
 
 
@@ -55,5 +68,19 @@ jQuery(document).ready(function($) {
 		$('.views__slider').slick('slickNext');
 	});
 
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > 500) {
+	// 		$('.scroll-up').show('slow');
+	// 	} else if ($(this).scrollTop() <= 500 ) {
+	// 		$('.scroll-up').hide('slow');
+	// 	}
+	// });
 
-})
+	$('.show-program').on('click', function(){
+		$('.program .hide').removeClass('hide');
+		$('.list-days').removeClass('list-fadeout');
+		$(this).hide('300')
+	});
+
+
+});
