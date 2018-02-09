@@ -2,7 +2,7 @@
 $name = trim(strip_tags($_POST['name']));
 $phone =  trim(strip_tags($_POST['phone']));
 if((isset($name)&&$_POST['name']!='')&&(isset($phone)&&$_POST['phone']!='')){
-    $to = 'vitaliy.flashnika@gmail.com';
+    $to = 'info@okmi-exclusive.com.ua';
     $subject = 'Заявка на тур!';
     $message = '
                 <html>
