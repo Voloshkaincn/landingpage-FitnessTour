@@ -68,13 +68,6 @@ jQuery(document).ready(function($) {
 		$('.views__slider').slick('slickNext');
 	});
 
-	// $(window).scroll(function () {
-	// 	if ($(this).scrollTop() > 500) {
-	// 		$('.scroll-up').show('slow');
-	// 	} else if ($(this).scrollTop() <= 500 ) {
-	// 		$('.scroll-up').hide('slow');
-	// 	}
-	// });
 
 	$('.show-program').on('click', function(){
 		$('.program .hide').removeClass('hide');

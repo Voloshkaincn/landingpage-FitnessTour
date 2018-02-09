@@ -457,7 +457,7 @@ body {
 }
 @media (max-width: 319px) {
   body {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
@@ -732,6 +732,12 @@ li {
 @media (max-width: 767px) {
   .menu__item {
     font-size: 1.1em;
+    margin: 0 0.25em;
+  }
+}
+@media (max-width: 425px) {
+  .menu__item {
+    font-size: 1em;
     margin: 0 0.25em;
   }
 }
@@ -1185,13 +1191,12 @@ li {
 }
 @media (max-width: 767px) {
   .trainers__bg {
-    -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    height: 118%;
   }
 }
 @media (max-width: 575px) {
   .trainers__bg {
-    background-image: none;
+    display: none;
   }
 }
 .trainers__block {
@@ -1252,7 +1257,7 @@ li {
 }
 @media (max-width: 767px) {
   .trainers__info {
-    margin: 0;
+    margin: 3%;
   }
 }
 .trainers__after-text {
@@ -1301,7 +1306,7 @@ ol.list-days li:before {
   font-style: italic;
   font-size: 1.5em;
   position: absolute;
-  left: 0;
+  left: 20px;
 }
 @media (max-width: 991px) {
   ol.list-days li:before {
@@ -1310,7 +1315,7 @@ ol.list-days li:before {
 }
 @media (max-width: 425px) {
   ol.list-days li:before {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 ol.list-days li.hide {
@@ -1711,6 +1716,10 @@ footer {
 }
 .scroll-up.position-up {
   bottom: 3rem;
+}
+
+.fancybox-container video {
+  width: 96%;
 }
 
 /*# sourceMappingURL=style.css.map */
