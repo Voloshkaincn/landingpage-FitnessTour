@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 	$("#fullpage").fullpage({
 		anchors: ['okmiTour', 'beSlim', 'aboutTourSection', 'priceSection', 'trainersSection', 'afterTrainersSection', 'programSection', 'planSection', 'photoSection', 'viewsSection', 'endSection'],
-		//scrollBar: true,
+		scrollBar: true,
 		responsiveHeight: 767,
 		responsiveWidth: 576,
 		onLeave: function(index, nextIndex, direction){
@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 			if(index == 1 && direction =='down'){
 				$('.scroll-up').addClass('show');
 			} else if(index == 7) {
-				$('.program__list').scrollTop(0);
+				//$('.program__list').scrollTop(0);
 			} else if(index == 11) {
 				$('.scroll-up').removeClass('position-up');
 			}
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 			}
 		},
 		//scrollOverflow: true,
-		scrollOverflowReset: true,
+		//scrollOverflowReset: true,
 		normalScrollElements: '.program__list'
 
 	});
@@ -74,6 +74,18 @@ jQuery(document).ready(function($) {
 		$('.list-days').removeClass('list-fadeout');
 		$(this).hide('300')
 	});
+
+	//Scrolling  program__list
+	// $(".program__list").scroll(function () {
+	// 	var block_end = Math.floor($('.program__list .scroll-content').height() - $(this).height());
+	// 	console.log(block_end);
+	// 	console.log($(this).scrollTop());
+	// 	if($(this).scrollTop() >= block_end){
+	// 		//alert("end");
+	// 	}
+	// });
+
+
     //Sending message
 
     $(".bright-btn").click(
