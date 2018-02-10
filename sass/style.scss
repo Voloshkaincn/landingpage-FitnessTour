@@ -612,6 +612,9 @@ a, button {
 			}
 		}
 	}
+	.fp-responsive .price {
+		min-height: 50em;
+	}
 	.light-border-block {
 		border: 0.2rem solid #aeb2b8;
 		border-radius: 0.45em;
@@ -776,6 +779,9 @@ a, button {
 			}
 		}
 	}
+	.fp-responsive #trainers {
+		min-height: 55em;
+	} 
 	ol.list-days {
 		list-style-type: none;
 		counter-reset: daysCounter;
@@ -796,6 +802,7 @@ a, button {
 				left: 20px;
 				@media (max-width: 991px) {
 					font-size: 1.3em;
+					left: 0;
 				}
 				@media (max-width: 425px) {
 					font-size: 0.8em;
@@ -852,8 +859,8 @@ a, button {
 	#plan {
 		min-height: 43em;
 		@media (max-width: 991px) {
-			min-height: 39em;
-			padding-bottom: 4em;
+			min-height: 45em;
+			// padding-bottom: 4em;
 		}
 	}
 	.plan {
@@ -887,7 +894,7 @@ a, button {
 		min-height: 45em;
 		overflow: hidden;
 		@media (max-width: 991px) {
-			min-height: 40em;
+			min-height: 31em;
 		}
 		// @media (max-width: 767px) {
 		// 	min-height: 32em;
@@ -1074,6 +1081,9 @@ a, button {
 		@media (max-width: 425px) {
 			padding-bottom: 5em;
 		}
+	}
+	.fp-responsive .end {
+		min-height: 47em;
 	}
 	footer {
 		display: flex;

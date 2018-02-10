@@ -1106,6 +1106,10 @@ li {
   }
 }
 
+.fp-responsive .price {
+  min-height: 50em;
+}
+
 .light-border-block {
   border: 0.2rem solid #aeb2b8;
   border-radius: 0.45em;
@@ -1288,6 +1292,10 @@ li {
   font-size: 1.5rem;
 }
 
+.fp-responsive #trainers {
+  min-height: 55em;
+}
+
 ol.list-days {
   list-style-type: none;
   counter-reset: daysCounter;
@@ -1311,6 +1319,7 @@ ol.list-days li:before {
 @media (max-width: 991px) {
   ol.list-days li:before {
     font-size: 1.3em;
+    left: 0;
   }
 }
 @media (max-width: 425px) {
@@ -1372,8 +1381,7 @@ ol.list-days.list-fadeout li:nth-child(4) {
 }
 @media (max-width: 991px) {
   #plan {
-    min-height: 39em;
-    padding-bottom: 4em;
+    min-height: 45em;
   }
 }
 
@@ -1414,7 +1422,7 @@ ol.list-days.list-fadeout li:nth-child(4) {
 }
 @media (max-width: 991px) {
   #report {
-    min-height: 40em;
+    min-height: 31em;
   }
 }
 
@@ -1639,6 +1647,10 @@ footer {
   .end {
     padding-bottom: 5em;
   }
+}
+
+.fp-responsive .end {
+  min-height: 47em;
 }
 
 footer {
