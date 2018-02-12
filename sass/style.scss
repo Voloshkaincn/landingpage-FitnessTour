@@ -302,6 +302,83 @@ a, button {
 		}
 	}
 //=====
+//==== anmation ====
+	@keyframes bounceInDown {
+	  from,
+	  60%,
+	  75%,
+	  90%,
+	  to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  }
+
+	  0% {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, -3000px, 0);
+	    transform: translate3d(0, -3000px, 0);
+	  }
+
+	  60% {
+	    opacity: 1;
+	    -webkit-transform: translate3d(0, 25px, 0);
+	    transform: translate3d(0, 25px, 0);
+	  }
+
+	  75% {
+	    -webkit-transform: translate3d(0, -10px, 0);
+	    transform: translate3d(0, -10px, 0);
+	  }
+
+	  90% {
+	    -webkit-transform: translate3d(0, 5px, 0);
+	    transform: translate3d(0, 5px, 0);
+	  }
+
+	  to {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+	@keyframes bounceInLeft {
+	  from,
+	  60%,
+	  75%,
+	  90%,
+	  to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  }
+
+	  0% {
+	    opacity: 0;
+	    -webkit-transform: translate3d(-3000px, 0, 0);
+	    transform: translate3d(-3000px, 0, 0);
+	  }
+
+	  60% {
+	    opacity: 1;
+	    -webkit-transform: translate3d(25px, 0, 0);
+	    transform: translate3d(25px, 0, 0);
+	  }
+
+	  75% {
+	    -webkit-transform: translate3d(-10px, 0, 0);
+	    transform: translate3d(-10px, 0, 0);
+	  }
+
+	  90% {
+	    -webkit-transform: translate3d(5px, 0, 0);
+	    transform: translate3d(5px, 0, 0);
+	  }
+
+	  to {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+
+//=====
 
 //====== 
 	.bg-section {
@@ -329,6 +406,9 @@ a, button {
 	    background-repeat: no-repeat;
 	}
 	.main {
+		&-date.anim {
+			animation: bounceInDown 1s;
+		}
 		&-title {
 			font-size: 6.667em;
 			line-height: 1.3em;
@@ -337,6 +417,10 @@ a, button {
 			text-shadow: -3px -3px 3px #fff, 3px -3px 3px #fff, -3px 3px 3px #fff, 3px 3px 3px #fff;
 			z-index: 9;
 			text-align: left;
+			&.anim {
+				animation: bounceInLeft 1s 0.4s;
+				animation-fill-mode: backwards;
+			}
 			@media (max-height: 999px) {
 				font-size: 5.5em;
 			}
@@ -652,9 +736,8 @@ a, button {
 		}
 		&__title {
 			position: absolute;
-		    width: max-content;
+			width: auto;
 		    padding: 0 0.5em;
-		    //background: linear-gradient(60deg,#f9fbfd,#f1f5f9);
 		    top: -0.6em;
 		}
 		ul {

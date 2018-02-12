@@ -19,6 +19,8 @@ jQuery(document).ready(function($) {
 			var loadedSection = $(this);
 			if(index == 1){
 				$('.scroll-up').removeClass('show');
+				$('.main-date').addClass('anim');
+				$('.main-title').addClass('anim');
 			} else if(anchorLink == 'endSection') {
 				$('.scroll-up').addClass('position-up');
 			}
